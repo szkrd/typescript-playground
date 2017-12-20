@@ -6,6 +6,7 @@ import Interfaces from '../interfaces/interfaces';
 import Classes from '../classes/classes';
 import Functions from '../functions/functions';
 import Generics from '../generics/generics';
+import Enums from '../enums/enums';
 
 // let's try to avoid webpack circular references,
 // so the components are not going to be attached here
@@ -78,7 +79,7 @@ export default class App extends React.Component {
         { pageId === 'classes' && <Classes/> }
         { pageId === 'functions' && <Functions/> }
         { pageId === 'generics' && <Generics/> }
-        { pageId === 'enums' && <Todo/> }
+        { pageId === 'enums' && <Enums/> }
         { pageId === 'type-inference' && <Todo/> }
         { pageId === 'type-compatibility' && <Todo/> }
         { pageId === 'advanced-types' && <Todo/> }

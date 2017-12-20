@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const projectMeta = require('./package');
@@ -28,6 +29,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: projectMeta.name,
       template: 'src/index.html'
+    }),
+    // common chunks would give us a 13k common and 2mb+ base with default settings
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.js',
+      minChunks: function (module) {
+        if (module.resource && (/^.*\.(css|scss)$/).test(module.resource)) {
+          return false;
+        }
+        return module.context && module.context.includes('node_modules');
+      }
     })
   ]
 };

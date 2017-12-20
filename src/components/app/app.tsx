@@ -24,11 +24,11 @@ export const PAGES = [
   {id: 'type-inference', title: 'Type inference'},
   {id: 'type-compatibility', title: 'Type compatibility'},
   {id: 'advanced-types', title: 'Advanced types'},
-  {id: 'symbols', title: 'Symbols'},
-  {id: 'iterators-and-generators', title: 'Iterators and generators'},
-  {id: 'modules', title: 'Modules'},
-  {id: 'namespaces', title: 'Namespaces'},
-  {id: 'module-resolution', title: 'Module resolution'},
+  // {id: 'symbols', title: 'Symbols'},
+  // {id: 'iterators-and-generators', title: 'Iterators and generators'},
+  // {id: 'modules', title: 'Modules'},
+  // {id: 'namespaces', title: 'Namespaces'},
+  // {id: 'module-resolution', title: 'Module resolution'},
   {id: 'declaration-merging', title: 'Declaration merging'},
   {id: 'decorators', title: 'Decorators'},
   {id: 'mixins', title: 'Mixins'}
@@ -86,8 +86,6 @@ export default class App extends React.Component {
         { pageId === 'type-inference' && <TypeInference/> }
         { pageId === 'type-compatibility' && <TypeCompatibility/> }
         { pageId === 'advanced-types' && <AdvancedTypes/> }
-        { pageId === 'symbols' && <Todo/> }
-        { pageId === 'iterators-and-generators' && <Todo/> }
         { pageId === 'modules' && <Todo/> }
         { pageId === 'namespaces' && <Todo/> }
         { pageId === 'module-resolution' && <Todo/> }

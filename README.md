@@ -36,3 +36,16 @@ Can I haz more java in javascript please?
 Webstorm 2017.3 shits itself on plain js files in the project (like the webpack config), this seems
 to be a bug in Webstorm (builtin jslint+jshint combo ignoring js language version). Use eslint
 (along with tslint) and disable the old and obscure stuff. Or just use notepad.
+
+## things ignored
+
+1. Symbols: ts has es6 Symbol support, refer to the ecmascript spec
+   or [this nice article](https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/)
+2. Iterators and generators: ts has es6 iterable support, see spec
+   or [this mdn example](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator)
+3. Modules: es6 import export, tsc packaging, advanced topic
+   (CommonJS, SystemJS, AMD, UMD/isomorphic, es6 native modules)
+4. Namespaces (used to be "internal modules"): it's a mess. Just use es6 modules and forget the
+   multi-file namespace with its triple-slash meta crap.
+5. Module resolution: with the "node" resolution strategy things are somewhat clearer,
+   plus the whole module/path resolving in the shadow of webpack is an advanced thing.

@@ -8,6 +8,7 @@ import Functions from '../functions/functions';
 import Generics from '../generics/generics';
 import Enums from '../enums/enums';
 import TypeInference from '../type-inference/type-inference';
+import TypeCompatibility from '../type-compatibility/type-compatibility';
 
 // let's try to avoid webpack circular references,
 // so the components are not going to be attached here
@@ -19,9 +20,9 @@ export const PAGES = [
   {id: 'functions', title: 'Functions'},
   {id: 'generics', title: 'Generics'},
   {id: 'enums', title: 'Enums'},
-  {id: 'type-inference', title: 'Inference'},
-  {id: 'type-compatibility', title: 'Compatibility'},
-  {id: 'advanced-types', title: 'Types'},
+  {id: 'type-inference', title: 'Type inference'},
+  {id: 'type-compatibility', title: 'Type compatibility'},
+  {id: 'advanced-types', title: 'Advanced types'},
   {id: 'symbols', title: 'Symbols'},
   {id: 'iterators-and-generators', title: 'Iterators and generators'},
   {id: 'modules', title: 'Modules'},
@@ -82,7 +83,7 @@ export default class App extends React.Component {
         { pageId === 'generics' && <Generics/> }
         { pageId === 'enums' && <Enums/> }
         { pageId === 'type-inference' && <TypeInference/> }
-        { pageId === 'type-compatibility' && <Todo/> }
+        { pageId === 'type-compatibility' && <TypeCompatibility/> }
         { pageId === 'advanced-types' && <Todo/> }
         { pageId === 'symbols' && <Todo/> }
         { pageId === 'iterators-and-generators' && <Todo/> }

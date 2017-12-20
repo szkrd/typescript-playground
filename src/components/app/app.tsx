@@ -7,6 +7,7 @@ import Classes from '../classes/classes';
 import Functions from '../functions/functions';
 import Generics from '../generics/generics';
 import Enums from '../enums/enums';
+import TypeInference from '../type-inference/type-inference';
 
 // let's try to avoid webpack circular references,
 // so the components are not going to be attached here
@@ -80,7 +81,7 @@ export default class App extends React.Component {
         { pageId === 'functions' && <Functions/> }
         { pageId === 'generics' && <Generics/> }
         { pageId === 'enums' && <Enums/> }
-        { pageId === 'type-inference' && <Todo/> }
+        { pageId === 'type-inference' && <TypeInference/> }
         { pageId === 'type-compatibility' && <Todo/> }
         { pageId === 'advanced-types' && <Todo/> }
         { pageId === 'symbols' && <Todo/> }

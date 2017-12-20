@@ -9,6 +9,7 @@ import Generics from '../generics/generics';
 import Enums from '../enums/enums';
 import TypeInference from '../type-inference/type-inference';
 import TypeCompatibility from '../type-compatibility/type-compatibility';
+import AdvancedTypes from '../advanced-types/advanced-types';
 
 // let's try to avoid webpack circular references,
 // so the components are not going to be attached here
@@ -84,7 +85,7 @@ export default class App extends React.Component {
         { pageId === 'enums' && <Enums/> }
         { pageId === 'type-inference' && <TypeInference/> }
         { pageId === 'type-compatibility' && <TypeCompatibility/> }
-        { pageId === 'advanced-types' && <Todo/> }
+        { pageId === 'advanced-types' && <AdvancedTypes/> }
         { pageId === 'symbols' && <Todo/> }
         { pageId === 'iterators-and-generators' && <Todo/> }
         { pageId === 'modules' && <Todo/> }

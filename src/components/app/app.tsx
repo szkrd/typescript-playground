@@ -10,6 +10,7 @@ import Enums from '../enums/enums';
 import TypeInference from '../type-inference/type-inference';
 import TypeCompatibility from '../type-compatibility/type-compatibility';
 import AdvancedTypes from '../advanced-types/advanced-types';
+import Decorators from '../decorators/decorators';
 
 // let's try to avoid webpack circular references,
 // so the components are not going to be attached here
@@ -90,7 +91,7 @@ export default class App extends React.Component {
         { pageId === 'namespaces' && <Todo/> }
         { pageId === 'module-resolution' && <Todo/> }
         { pageId === 'declaration-merging' && <Todo/> }
-        { pageId === 'decorators' && <Todo/> }
+        { pageId === 'decorators' && <Decorators/> }
         { pageId === 'mixins' && <Todo/> }
       </div>
     );
